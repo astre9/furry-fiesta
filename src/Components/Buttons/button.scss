@@ -1,0 +1,99 @@
+@import "../../assets/main";
+
+button {
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.has-icon {
+    padding: 8px 16px;
+  }
+
+  &.icon-only-btn {
+    background: #ffffff;
+    padding: 8px 8px;
+    border: 2px solid $primary;
+    border-radius: 48px;
+    &:hover {
+      background: $secondary_400;
+
+      .furry-icon {
+        filter: invert(95%) sepia(100%) saturate(20%) hue-rotate(15deg) brightness(106%) contrast(105%);
+      }
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &.primary-btn {
+    background: $accent;
+    color: #ffffff;
+
+    &:hover {
+      background: $accent_400;
+    }
+
+    &:active {
+      background: linear-gradient(
+          0deg,
+          rgba(4, 66, 66, 0.1),
+          rgba(4, 66, 66, 0.1)
+        ),
+        $accent;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background: $secondary;
+      color: $secondary;
+    }
+  }
+
+  &.secondary-btn {
+    background: $secondary;
+    color: #ffffff;
+
+    &:hover {
+      background: $secondary;
+    }
+
+    &:active {
+      background: $secondary;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background: $secondary;
+      color: $secondary;
+    }
+  }
+
+  &.secondary-outline-btn {
+    background: #ffffff;
+    color: $secondary;
+    border: 2px solid $secondary;
+
+    &:hover {
+      color: #ffffff;
+      background: $secondary;
+    }
+
+    &:active {
+      color: #ffffff;
+      background: $secondary;
+    }
+  }
+}

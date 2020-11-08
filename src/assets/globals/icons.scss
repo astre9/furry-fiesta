@@ -1,0 +1,133 @@
+.furry-icon {
+  @include backgroundImage(contain);
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  display: inline-block;
+  
+  &:first-child:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  &:last-child:not(:first-child) {
+    margin-left: 12px;
+  }
+
+  &__placeholder-txt {
+    line-height: 32px;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &.no-margin {
+    &:first-child:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+
+  &.arrow {
+    &.black-icon {
+      background-image: url("../icons/arrow.svg");
+    }
+    &.right {
+      transform: rotate(-90deg);
+      transform-origin: center center;
+    }
+    &.left {
+      transform: rotate(90deg);
+      transform-origin: center center;
+    }
+    &.top {
+      transform: rotate(180deg);
+      transform-origin: center center;
+    }
+  }
+
+  &.has-border {
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  &.is-rounded {
+    border-radius: 50%;
+  }
+
+  &.search {
+    background-image: url("../icons/search.svg");
+  }
+
+  &.favourite {
+    &.active-icon {
+      background-image: url("../icons/favourite-active.svg");
+    }
+    &.inactive-icon {
+      background-image: url("../icons/favourite-inactive.svg");
+    }
+  }
+
+  &.star {
+    &.active-icon {
+      background-image: url("../icons/star-active.svg");
+    }
+    &.inactive-icon {
+      background-image: url("../icons/star-inactive.svg");
+    }
+  }
+
+  &.google {
+    background-image: url("../icons/google.svg");
+  }
+
+  &.twitter {
+    background-image: url("../icons/twitter.svg");
+  }
+
+  &.facebook {
+    background-image: url("../icons/facebook.svg");
+  }
+
+  &.add {
+    background-image: url("../icons/add.svg");
+  }
+
+  &.cat {
+    background-image: url("../icons/cat.svg");
+  }
+
+  &.bird {
+    background-image: url("../icons/bird.svg");
+  }
+
+  &.dog {
+    background-image: url("../icons/dog.svg");
+  }
+
+  &.fish {
+    background-image: url("../icons/fish.svg");
+  }
+
+  &.cart {
+    background-image: url("../icons/cart.svg");
+  }
+
+  &.dollar {
+    background-image: url("../icons/dollar.svg");
+  }
+
+  &.exit {
+    background-image: url("../icons/exit.svg");
+  }
+
+  &.minus {
+    background-image: url("../icons/minus.svg");
+  }
+
+  &.person {
+    background-image: url("../icons/person.svg");
+  }
+}
